@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css");
-/* font-family: "Merriweather", serif; */
 
 :root {
   --background: #202024; /* Fundo principal */
@@ -14,9 +13,12 @@
   --warning: #ffd166; /* Alertas / atenção */
   --danger: #f75f5f; /* Erros / problemas */
   --accent: #ab78ff; /* Roxo vibrante p/ realces */
+
+  --primary-font: "Merriweather", serif;
+  --secondary-font: "Roboto", sans-serif;
 }
 
-/* Formatação */
+/* Formatting */
 * {
   margin: 0;
   padding: 0;
@@ -26,5 +28,73 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--secondary-font);
+}
+
+/* Container Styles */
+.container {
+  width: 100%;
+  max-width: 1080px;
+  height: 100dvh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: 100%;
+  height: calc(100dvh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main__search-box {
+  width: 100%;
+  max-width: 640px;
+}
+
+.main__search-form {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+
+.main__icon {
+  font-family: var(--primary-font);
+  width: 38px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  border-radius: 99rem;
+}
+
+.main__input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  color: var(--foreground);
+  font-size: 1rem;
+}
+
+.main__input::placeholder {
+  color: var(--foreground); /* cor que você quiser */
+  opacity: 70; /* opcional, para garantir que a cor fique sólida */
+}
+
+.main__input:focus {
+  outline: none;
+}
+
+.main__clock {
 }

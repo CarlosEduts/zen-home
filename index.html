@@ -4,8 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zen Home</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
+    <div class="container">
+      <main class="main">
+        <div class="main__search-box">
+          <div class="main__search-form">
+            <span class="main__icon">Z</span>
+            <input
+              class="main__input"
+              type="text"
+              id="input-text"
+              placeholder="Comece a digitar..."
+            />
+            <span class="main__clock" id="clock">22:47</span>
+          </div>
+
+          <div class="main__search-result"></div>
+        </div>
+      </main>
+
+      <footer class="footer"></footer>
+    </div>
     <script type="module" src="./build/main.js"></script>
   </body>
 </html>
