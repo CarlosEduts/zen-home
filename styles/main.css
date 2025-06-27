@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css");
+/* font-family: "Merriweather", serif; */
+
+:root {
+  --background: #202024; /* Fundo principal */
+  --surface: #2a2a2f; /* Elementos elevados (cards, modais) */
+  --border: #3a3a40; /* Bordas e divisores */
+  --foreground: #e6e6f0; /* Texto principal */
+  --muted: #a0a0b0; /* Texto secundário */
+  --primary: #4c82fb; /* Ação principal */
+  --primary-hover: #3a6de0; /* Hover / focus do primário */
+  --success: #3fbf7f; /* Feedback positivo */
+  --warning: #ffd166; /* Alertas / atenção */
+  --danger: #f75f5f; /* Erros / problemas */
+  --accent: #ab78ff; /* Roxo vibrante p/ realces */
+}
+
+/* Formatação */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Roboto", sans-serif;
+}
