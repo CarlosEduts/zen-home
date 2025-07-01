@@ -4,10 +4,17 @@ import { passwordGenerator } from "../tools/password-generator.js";
 import { enginesList } from "../tools/engines-list.js";
 import { nasaWallpaper } from "../components/ui/nasa-wallpaper.js";
 
+// Função para alternar visibilidade
+const toggleVisibility = (element: HTMLElement, condition: boolean) => {
+  element.style.display = condition ? "flex" : "none";
+};
+
+// Função principal
 export function initApp() {
   const input = document.querySelector<HTMLInputElement>("#input-text");
-  const searchResult = document.querySelector(".main__search-result");
-
+  const searchResult = document.querySelector<HTMLDivElement>(
+    ".main__search-result"
+  );
   if (!input || !searchResult) return;
 
   clock();
@@ -17,9 +24,10 @@ export function initApp() {
     const inputValue = input.value.trim();
     searchResult.textContent = "";
 
+    toggleVisibility(searchResult, !!inputValue);
+
     calculator("=", inputValue);
     passwordGenerator("genpass ", inputValue);
-
     enginesList.forEach((engine) => {
       engine.searchFn(inputValue);
     });
