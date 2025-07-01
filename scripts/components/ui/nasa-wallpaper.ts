@@ -10,7 +10,7 @@ type ApodResponse = {
   date: string;
 };
 
-function aplayWallpaper(data: ApodResponse): void {
+function applyWallpaper(data: ApodResponse): void {
   const url = (data.hdurl || data.url).replace(/ /g, "_");
 
   console.log(url);
@@ -34,7 +34,7 @@ export function nasaWallpaper() {
   if (cache) {
     const data: ApodResponse = JSON.parse(cache);
     if (data.date === today) {
-      aplayWallpaper(data);
+      applyWallpaper(data);
       return;
     }
   }
@@ -44,7 +44,7 @@ export function nasaWallpaper() {
     .then((data: ApodResponse) => {
       if (data.media_type !== "image") return;
       localStorage.setItem("nasa-wallpaper", JSON.stringify(data));
-      aplayWallpaper(data);
+      applyWallpaper(data);
     })
     .catch((err) => console.error("Erro ao buscar imagem da NASA:", err));
 }
