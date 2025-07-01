@@ -1,4 +1,4 @@
-import { createResultCard } from "../ui/card-result.js";
+import { createResultCard } from "../components/ui/card-result.js";
 
 const CHARS =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";

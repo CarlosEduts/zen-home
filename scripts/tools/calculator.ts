@@ -1,4 +1,4 @@
-import { createResultCard } from "../ui/card-result.js";
+import { createResultCard } from "../components/ui/card-result.js";
 
 export function calculator(shortcut: string, query: string) {
   if (query.toLowerCase().startsWith(shortcut)) {
