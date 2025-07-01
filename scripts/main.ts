@@ -1,5 +1,6 @@
 import { clock } from "./components/ui/clock.js";
 import { search } from "./components/tools/search.tool.js";
+import { calculator } from "./components/tools/calculator.tool.js";
 
 const input: HTMLInputElement | null = document.querySelector("#input-text");
 const searchResult: Element | null = document.querySelector(
@@ -12,6 +13,8 @@ input?.addEventListener("input", () => {
   if (searchResult) {
     searchResult.textContent = " ";
   }
+
+  calculator("=", inputValue);
 
   search(
     "g ",
