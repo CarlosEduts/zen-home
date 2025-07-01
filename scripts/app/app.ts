@@ -2,6 +2,7 @@ import { clock } from "../components/ui/clock.js";
 import { calculator } from "../tools/calculator.js";
 import { passwordGenerator } from "../tools/password-generator.js";
 import { enginesList } from "../tools/engines-list.js";
+import { nasaWallpaper } from "../components/ui/nasa-wallpaper.js";
 
 export function initApp() {
   const input = document.querySelector<HTMLInputElement>("#input-text");
@@ -10,6 +11,7 @@ export function initApp() {
   if (!input || !searchResult) return;
 
   clock();
+  nasaWallpaper();
 
   input.addEventListener("input", () => {
     const inputValue = input.value.trim();
