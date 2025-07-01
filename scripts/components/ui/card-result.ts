@@ -38,6 +38,9 @@ export function createResultCard({
   const titleEl = createElement("p", "", title);
   const subtitleEl = createElement("small", "", subtitle);
 
+  card.tabIndex = 0; // torna focável
+  (card as any)._onAction = onAction; // Armazena a ação no elemento
+
   iconDiv.appendChild(iconElement);
   contentDiv.appendChild(titleEl);
   contentDiv.appendChild(subtitleEl);

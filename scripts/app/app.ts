@@ -3,6 +3,7 @@ import { calculator } from "../tools/calculator.js";
 import { passwordGenerator } from "../tools/password-generator.js";
 import { enginesList } from "../tools/engines-list.js";
 import { nasaWallpaper } from "../components/ui/nasa-wallpaper.js";
+import { setupKeyboardNavigation } from "../interactions/keyboard-navigation.js";
 
 // Função para alternar visibilidade
 const toggleVisibility = (element: HTMLElement, condition: boolean) => {
@@ -19,6 +20,7 @@ export function initApp() {
 
   clock();
   nasaWallpaper();
+  setupKeyboardNavigation();
 
   input.addEventListener("input", () => {
     const inputValue = input.value.trim();
