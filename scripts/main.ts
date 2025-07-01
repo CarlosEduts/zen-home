@@ -1,6 +1,7 @@
 import { clock } from "./components/ui/clock.js";
 import { search } from "./components/tools/search.tool.js";
 import { calculator } from "./components/tools/calculator.tool.js";
+import { passwordGenerator } from "./components/tools/password-generator.tool.js";
 
 const input: HTMLInputElement | null = document.querySelector("#input-text");
 const searchResult: Element | null = document.querySelector(
@@ -15,6 +16,7 @@ input?.addEventListener("input", () => {
   }
 
   calculator("=", inputValue);
+  passwordGenerator("genpass ", inputValue)
 
   search(
     "g ",
