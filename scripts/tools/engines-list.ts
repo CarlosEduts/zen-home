@@ -4,16 +4,6 @@ export const enginesList = [
   {
     searchFn: (query: string) =>
       search(
-        "g ",
-        "Google",
-        "https://www.google.com/search?q=",
-        query,
-        "ti-brand-google-filled"
-      ),
-  },
-  {
-    searchFn: (query: string) =>
-      search(
         "b ",
         "Bing",
         "https://www.bing.com/search?q=",
@@ -59,6 +49,17 @@ export const enginesList = [
         "https://gemini.google.com/search?q=",
         query,
         "ti-brand-google"
+      ),
+  },
+  // Busca padrão
+  {
+    searchFn: (query: string) =>
+      search(
+        "",
+        "Google",
+        "https://www.google.com/search?q=",
+        query,
+        "ti-brand-google-filled"
       ),
   },
 ];
