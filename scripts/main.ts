@@ -1,13 +1,23 @@
 import { clock } from "./components/ui/clock.js";
-import { createResultCard } from "./components/ui/card-result.js";
+import { search } from "./components/tools/search.tool.js";
 
+const input: HTMLInputElement | null = document.querySelector("#input-text");
+const searchResult: Element | null = document.querySelector(
+  ".main__search-result"
+);
 clock();
 
-createResultCard({
-  title: "Buscar no YouTube | Musicas",
-  subtitle: "https://youtube.com/minha-pesquisa",
-  icon: "ti-brand-youtube-filled",
-  onAction: () => {
-    window.open("https://youtube.com/minha-pesquisa", "_blank");
-  },
+input?.addEventListener("input", () => {
+  const inputValue = input.value.trim();
+  if (searchResult) {
+    searchResult.textContent = " ";
+  }
+
+  search(
+    "g ",
+    "Google",
+    "https://www.google.com/search?q=",
+    inputValue,
+    "ti-brand-google-filled"
+  );
 });
