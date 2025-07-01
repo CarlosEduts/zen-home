@@ -1,4 +1,4 @@
-import { createResultCard } from "../components/ui/card-result.js";
+import { createResultCard } from "../components/card-result.js";
 
 export function search(
   shortcut: string,
