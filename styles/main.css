@@ -53,6 +53,8 @@ body {
 .main__search-box {
   width: 100%;
   max-width: 640px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__search-form {
@@ -64,7 +66,8 @@ body {
   padding: 0 1.5rem;
   background-color: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .main__icon {
@@ -97,4 +100,39 @@ body {
 }
 
 .main__clock {
+}
+
+.main__search-result {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.main__result-icon {
+  background-color: var(--border);
+  opacity: 60;
+  width: 30px;
+  height: 30px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+}
+
+.main__result-content > p {
+}
+
+.main__result-content > small {
+  opacity: 60;
+  font-size: .7rem;
+  font-weight: 400;
 }
