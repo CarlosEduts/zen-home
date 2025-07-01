@@ -142,7 +142,6 @@ body {
   border-radius: 0.3rem;
 }
 
-.result__item:hover,
 .result__item:focus {
   background-color: var(--primary-hover);
   color: var(--foreground);
