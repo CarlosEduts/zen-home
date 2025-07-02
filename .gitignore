@@ -1,2 +1,5 @@
-# Ignorar a build do projeto
+# dependencies
+/node_modules
+
+# production
 /build
