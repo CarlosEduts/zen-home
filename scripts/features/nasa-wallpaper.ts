@@ -13,7 +13,6 @@ type ApodResponse = {
 function applyWallpaper(data: ApodResponse): void {
   const url = (data.hdurl || data.url).replace(/ /g, "_");
 
-  console.log(url);
   document.body.style.background = `
     radial-gradient(
         circle at center,
