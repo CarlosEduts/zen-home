@@ -22,28 +22,10 @@
 
 **Frontend:** HTML5, CSS3, TypeScript
 
-## 📂 Estrutura do Projeto
-
-```
-zen-home/
-├── assets/         # Ícones, estilos e imagens
-|── scripts/        # Códigos typescript
-├──── features/     # Clock, NASA Wallpaper
-├──── tools/        # Calculator, Password Generator, Engines List
-├──── interactions/ # Keyboard Navigation
-├── index.html      # Layout principal
-└── main.ts         # Inicialização das features
-```
-
 ## 📈 Próximos Passos
 
 * Adicionar **esquemas de cores**.
 * Implementar **favoritos** e histórico de buscas.
-
-## 🤝 Contribuição
-
-* Fork no GitHub, ramo e pull request.
-* Siga o estilo de código.
 
 ## 📄 Licença
 
