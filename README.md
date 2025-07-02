@@ -1,6 +1,4 @@
-# Zen Home
-
-## 🎯 Objetivo
+## Zen Home
 
 **Zen Home** é uma **página inicial personalizável** que coloca as principais ferramentas e atalhos de busca na palma da sua mão, proporcionando rapidez e organização ao usuário.
 
