@@ -11,7 +11,7 @@ type ApodResponse = {
 };
 
 function applyWallpaper(data: ApodResponse): void {
-  const url = data.url.replace(/ /g, "_");
+  const url = (data.hdurl || data.url).replace(/ /g, "_");
 
   document.body.style.backgroundImage = `
     radial-gradient(
