@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Zen Home é sua página inicial personalizável com atalhos para buscadores.",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "devDependencies": {
     "typescript": "^5.3.3"
