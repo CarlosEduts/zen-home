@@ -5,6 +5,7 @@ import { enginesList } from "../tools/engines-list.js";
 import { nasaWallpaper } from "../features/nasa-wallpaper.js";
 import { setupKeyboardNavigation } from "../interactions/keyboard-navigation.js";
 import { uuidGenerator } from "../tools/uuid-generator.js";
+import { help } from "../tools/help.js";
 
 // Função para alternar visibilidade
 const toggleVisibility = (element: HTMLElement, condition: boolean) => {
@@ -35,5 +36,6 @@ export function initApp() {
       engine.searchFn(inputValue);
     });
     uuidGenerator("uuid ", inputValue);
+    help("help", inputValue);
   });
 }
