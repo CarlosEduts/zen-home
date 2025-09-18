@@ -17,6 +17,7 @@
 * **APIs Externas**: uso da **NASA Wallpaper API** para imagens de fundo dinâmicas.
 * **Relógio Digital**: exibição da hora em tempo real.
 * **Navegação por Teclado**: controle total sem mouse, aumentando a produtividade.
+* **Gerador de UUIDs**: gere UUIDs v4 com o comando uuid ou uuid <n> — por exemplo uuid 3 gera 3 UUIDs (máx. 10).
 
 ## 🖥️ Tecnologias e Ferramentas
 
